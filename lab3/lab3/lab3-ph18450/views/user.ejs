@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+       thead tr th{ color: red;}
+    </style>
+  </head>
+  <body>
+    
+    <h2 class="d-flex justify-content-center">Danh Sách User</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+      <a class="navbar-brand d-flex" href="index.html"
+        ><button class="btn btn-primary" type="button">Back</button></a
+      >
+      <div class="container-fluid ">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="user/adduser">Thêm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sửa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xóa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cập nhật</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lọc
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <table class="table container">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">FullName</th>
+          <th scope="col">UserName</th>
+          <th scope="col">Email</th>
+          <th scope="col">Group</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Vn</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Tl</td>
+            <td>Fales</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+  
+            <td>Larry the Bird</td>
+            <td>Kie</td>
+            <td>@twitter</td>
+            <td>USA</td>
+            <td>True</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn-group d-flex justify-content-center " role="group" aria-label="Basic example">
+        <div class="">
+          <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+        </div>
+      </div>
+  
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+  </html>
